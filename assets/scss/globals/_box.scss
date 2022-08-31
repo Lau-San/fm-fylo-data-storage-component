@@ -1,0 +1,45 @@
+@use '../util' as u;
+:root {
+	--padding: 2.8rem;
+	--padding-storage-meter: 2.5rem;
+}
+
+.box {
+	background: var(--clr-dark-blue);
+	box-shadow: 0 20px 40px rgba(#000, .2);
+	border-radius: 0.6rem;
+	padding: var(--padding);
+
+	&.fylo-actions {
+		border-top-right-radius: 6rem;
+	}
+
+	&.fylo-storage-meter {
+		padding-inline: var(--padding-storage-meter);
+		padding-block: var(--padding-storage-meter) 3.6rem;
+
+		@media (min-width: u.$md) {
+			height: fit-content;
+			padding-block: var(--padding-storage-meter);
+		}
+	}
+
+	&.space-left {
+		background: #fff;
+		box-shadow: none;
+		padding: 1rem 1.5rem;
+
+		@media (min-width: u.$md) {
+			&::after {
+				content: "";
+				border-style: solid;
+				border-width: 0 30px 30px 0;
+				border-color: transparent #fff transparent transparent;
+				position: absolute;
+				bottom: 0;
+				right: 0;
+				transform: translateY(22px);
+			}
+		}
+	}
+}

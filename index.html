@@ -22,14 +22,48 @@
 
 <body>
 
-  <!-- TODO Structure -->
+  <main class="main">
+    <section class="container">
 
-  You’ve used 815 GB of your storage
+      <div class="fylo-actions box">
+        <img class="logo" src="./assets/images/logo.svg" alt="Fylo">
 
-  185 GB Left
+        <div class="actions">
+          <a class="btn" href="#">
+            <img src="./assets/images/icon-document.svg" alt="New file">
+          </a>
+          <a class="btn" href="#">
+            <img src="./assets/images/icon-folder.svg" alt="New folder">
+          </a>
+          <a class="btn" href="#">
+            <img src="./assets/images/icon-upload.svg" alt="Upload">
+          </a>
+        </div>
+      </div>
 
-  0 GB
-  1000 GB
+      <div class="fylo-storage-meter box">
+
+        <p>You've used <span>812 GB</span> of your storage</p>
+
+        <div class="storage-meter">
+          <div class="storage-meter-fill">
+            <div class="storage-meter-fill-end"></div>
+          </div>
+        </div>
+
+        <div class="min-max">
+          <p>0 GB</p>
+          <p>1000 GB</p>
+        </div>
+
+        <div class="space-left box">
+          <span>185</span> GB Left
+        </div>
+
+      </div>
+
+    </section>
+  </main>
 
   <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge"

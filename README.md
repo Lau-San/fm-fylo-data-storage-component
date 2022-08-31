@@ -1,6 +1,6 @@
 # Frontend Mentor - Fylo data storage component solution
 
-This is a solution to the [Fylo data storage component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/fylo-data-storage-component-1dZPRbV5n). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Fylo data storage component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/fylo-data-storage-component-1dZPRbV5n). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -12,10 +12,7 @@ This is a solution to the [Fylo data storage component challenge on Frontend Men
     - [Links](#links)
   - [My process](#my-process)
     - [Built with](#built-with)
-    - [What I learned](#what-i-learned)
-    - [Useful resources](#useful-resources)
   - [Author](#author)
-  - [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -23,11 +20,11 @@ This is a solution to the [Fylo data storage component challenge on Frontend Men
 
 Users should be able to:
 
-- View the optimal layout for the site depending on their device's screen size
+-   View the optimal layout for the site depending on their device's screen size
 
 ### Screenshot
 
-<!-- TODO Add screenshot -->
+![](./screenshot.png)
 
 ### Links
 
@@ -42,27 +39,12 @@ Users should be able to:
 
 ### Built with
 
-<!-- TODO Update this -->
-
-<!-- - Semantic HTML5 markup -->
-<!-- - CSS custom properties -->
-<!-- - Flexbox -->
-<!-- - CSS Grid -->
-<!-- - Mobile-first workflow -->
-- [Sass](https://sass-lang.com)
-
-### What I learned
-
-<!-- TODO Update this -->
-
-### Useful resources
-
-<!-- TODO Update this -->
+-   Semantic HTML5 markup
+-   CSS custom properties
+-   Flexbox
+-   Mobile-first workflow
+-   [Sass](https://sass-lang.com)
 
 ## Author
 
-- Frontend Mentor - [@Lau-San](https://www.frontendmentor.io/profile/Lau-San)
-
-## Acknowledgments
-
-<!-- TODO Update this -->
+-   Frontend Mentor - [@Lau-San](https://www.frontendmentor.io/profile/Lau-San)

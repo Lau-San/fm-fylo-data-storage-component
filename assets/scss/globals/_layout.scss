@@ -1,0 +1,77 @@
+@use "../util" as u;
+
+body {
+	background: url(/assets/images/bg-mobile.png) no-repeat,
+		var(--clr-very-dark-blue);
+	background-size: cover;
+
+	@media (min-width: u.$lg) {
+		background: url(/assets/images/bg-desktop.png) no-repeat bottom right,
+			var(--clr-very-dark-blue);
+	}
+}
+
+.main {
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container {
+	width: clamp(240px, 88%, 400px);
+	display: flex;
+	flex-direction: column;
+	gap: 1.2rem;
+
+	@media (min-width: u.$md) {
+		flex-direction: row;
+		align-items: flex-end;
+		// width: 820px;
+		width: min(70%, 820px);
+	}
+}
+
+.fylo-actions {
+	@media (min-width: u.$md) {
+		flex-grow: 1;
+	}
+}
+
+.actions {
+	margin-top: 1.9rem;
+	display: flex;
+	gap: 1rem;
+}
+
+.fylo-storage-meter {
+	position: relative;
+
+	@media (min-width: u.$md) {
+		flex-grow: 5;
+	}
+}
+
+.min-max {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 0.6rem;
+}
+
+.space-left {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translate(-50%, 50%);
+
+	@media (min-width: u.$md) {
+		top: 0;
+		bottom: auto;
+		right: var(--padding-storage-meter);
+		left: auto;
+		transform: translate(0, -60%);
+	}
+}

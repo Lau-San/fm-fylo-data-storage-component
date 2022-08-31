@@ -1,0 +1,42 @@
+@use "../util" as u;
+
+.storage-meter {
+	&-fill {
+		animation-name: meter-fill;
+		animation-duration: 1s;
+		animation-fill-mode: backwards;
+		animation-timing-function: ease-out;
+	}
+}
+
+@keyframes meter-fill {
+	from {
+		width: 0%;
+	}
+}
+
+.space-left {
+	animation-name: in-fade-up;
+	animation-duration: 1s;
+	animation-fill-mode: backwards;
+	animation-timing-function: ease-in-out;
+	animation-delay: 0.5s;
+
+	@media (min-width: u.$md) {
+		animation-name: in-fade-down;
+	}
+}
+
+@keyframes in-fade-down {
+	from {
+		opacity: 0;
+		transform: translate(0, -80%);
+	}
+}
+
+@keyframes in-fade-up {
+	from {
+		opacity: 0;
+		transform: translate(-50%, 60%);
+	}
+}

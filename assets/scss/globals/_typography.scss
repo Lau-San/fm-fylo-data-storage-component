@@ -1,0 +1,37 @@
+@use '../util' as u;
+
+body {
+	font-family: Raleway, sans-serif;
+	color: #fff;
+}
+
+.fylo-storage-meter {
+	p {
+		text-align: center;
+
+		@media (min-width: u.$md) {
+			text-align: start;
+		}
+	}
+
+	span {
+		font-weight: 700;
+	}
+}
+
+.min-max {
+	font-size: .9rem;
+	font-weight: 700;
+}
+
+.space-left {
+	color: var(--clr-grayish-blue);
+	font-size: .9rem;
+	font-weight: 700;
+	text-transform: uppercase;
+
+	span {
+		color: var(--clr-very-dark-blue);
+		font-size: 2.4rem;
+	}
+}
