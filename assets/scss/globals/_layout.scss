@@ -1,12 +1,12 @@
 @use "../util" as u;
 
 body {
-	background: url(/assets/images/bg-mobile.png) no-repeat,
+	background: url(../images/bg-mobile.png) no-repeat,
 		var(--clr-very-dark-blue);
 	background-size: cover;
 
 	@media (min-width: u.$lg) {
-		background: url(/assets/images/bg-desktop.png) no-repeat bottom right,
+		background: url(../images/bg-desktop.png) no-repeat bottom right,
 			var(--clr-very-dark-blue);
 	}
 }
